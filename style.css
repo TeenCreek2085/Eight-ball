@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html {
+  font-weight: 400;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-title {
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.shaking {
+  animation: shake 1s ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-5px) rotate(-2deg);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(5px) rotate(2deg);
+  }
+}
+
+.btn {
+  margin-bottom: 20px;
+  padding: 12px 22px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: white;
+  color: black;
+  outline: 2px solid black;
+}
+
+.btn:disabled {
+  background-color: rgb(114, 114, 114);
+  color: white;
+  cursor: not-allowed;
+}
+
+.new-get-btn {
+  padding: 10px 20px;
+}
+
+.answer {
+  display: none;
+  color: tomato;
+  border-bottom: 3px solid black;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
